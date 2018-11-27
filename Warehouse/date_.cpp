@@ -6,10 +6,7 @@ date_::date_(int day, int month, int year)
 	setMonth(month);
 	setYear(year);
 
-	
-	
 	localtime_s(&now, &t);
-
 }
 void date_::setDay(int day)
 {
@@ -36,12 +33,10 @@ void date_::setYear(int year)
 }
 int date_::getCurrentDay() const
 {
-
 	return now.tm_mday;
 }
 int date_::getCurrentMonth() const
 {
-
 	return now.tm_mon+1;
 }
 int date_::getCurrentYear() const
